@@ -60,13 +60,31 @@ Bismuth focuses on the idea of a lightweight, customizable Windows control cente
 
 ## Getting Started
 
+## Getting Started
+
 ### Prerequisites
 
-- Node.js 18 or later
-- npm
-- Rust stable toolchain
-- Windows development environment for desktop builds
-- Visual Studio 2022 C++ build tools (for Tauri on Windows)
+Before setting up the project, make sure you have the following installed on your machine.
+
+#### 1. Node.js & npm
+* **Download:** Visit [nodejs.org](https://nodejs.org/) and download the **LTS (Long Term Support)** version.
+* **Winget:** `winget install OpenJS.NodeJS.LTS`
+* **Verify:** Open terminal and run `node -v` (should be v18 or later) and `npm -v`.
+
+#### 2. Visual Studio 2022 C++ Build Tools
+Tauri requires C++ build dependencies on Windows to compile native binaries.
+* **Download:** Download the installer from [Visual Studio C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+* **Installation Setup:** During setup, make sure to check the **"Desktop development with C++"** workload and ensure **"Windows 10/11 SDK"** is selected.
+
+#### 3. Rust Toolchain
+* **Download:** Go to [rust-lang.org/tools/install](https://www.rust-lang.org/tools/install) to download and run `rustup-init.exe`.
+* **Winget:** `winget install Rustlang.Rustup`
+* **Configuration:** Choose default installation option (select the `msvc` toolchain if prompted).
+* **Verify:** Open a new terminal window and run `rustc --version` and `cargo --version`.
+
+#### 4. Microsoft Edge WebView2
+*(Pre-installed on most modern Windows 10/11 machines)*
+* **Download:** If missing, download the **Evergreen Bootstrapper** from [Microsoft WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).
 
 ### Install dependencies
 
